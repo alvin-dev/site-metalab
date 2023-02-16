@@ -143,3 +143,12 @@ ScrollReveal({
   #about header,
   #about .content
   `)
+
+// function submit form
+
+function submitFormMensage() {
+  const txtMensagem = document.querySelector('#txtSend')
+  txtMensagem.classList.add('show')
+}
+
+submitFormMensage()

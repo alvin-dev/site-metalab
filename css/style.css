@@ -880,6 +880,20 @@ body.menu-expanded .close-menu path {
   font-size: 12px;
 }
 
+#txtSend {
+  display: none;
+  margin-top: 2rem;
+  width: 100%;
+  font-weight: 600;
+  background-color: rgb(135, 247, 135);
+  border: solid 0.2rem rgb(16, 199, 16);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#txtSend.show {
+  display: block;
+}
+
 /*======= FOOTER  =======================================================*/
 
 footer {

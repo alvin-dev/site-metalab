@@ -157,7 +157,9 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="#contact" onclick="closeMenu()">Quem somos</a>
+              <a class="active" href="#contact" onclick="closeMenu()"
+                >Quem somos</a
+              >
             </li>
             <li>
               <a href="#about" onclick="closeMenu()">Produtos</a>
@@ -330,8 +332,8 @@
               <h2>A Metalab cuida de você</h2>
             </header>
             <p>
-              A Metalab tem como objetivo levar para casa de todos os seus
-              consumidores produtos que entregue os resultados desejados. A
+              A Metalab tem como objetivo, levar para casa de todos os seus
+              consumidores, produtos que entreguem os resultados desejados. A
               Metalab desenvolve e comercializa produtos para ajudar você a se
               cuidar e criar uma nova relação com a sua saúde.
             </p>
@@ -408,13 +410,13 @@
               <img alt="LAXTRINE" src="./assets/marcas/LAXTRINEAtivo.png" />
             </div>
             <div>
-              <img alt="MELTRAT" src="./assets/marcas/MELTRATAtivo.png" />
-            </div>
-            <div>
               <img alt="Mucolisil" src="./assets/marcas/MucolisilAtivo-1.png" />
             </div>
             <div>
               <img alt="Muricalm" src="./assets/marcas/MuricalmAtivo.png" />
+            </div>
+            <div>
+              <img alt="purofer" src="./assets/marcas/purofer.png" />
             </div>
           </div>
           <button class="glider-prev">
@@ -531,13 +533,14 @@
         <div class="col-b">
           <div class="login-box">
             <form
+              onsubmit="submitFormMensage()"
               action="https://formmail.kinghost.net/formmail.cgi"
               method="POST"
             >
               <input
                 type="hidden"
                 name="recipient"
-                value="alvinweeb@gmail.com"
+                value="sac@metalabfarma.com.br"
               />
               <input
                 type="hidden"
@@ -549,7 +552,11 @@
                 name="subject"
                 value="Formulário Site Metalab"
               />
-              <input type="hidden" name="email" value="alvinweeb@gmail.com" />
+              <input
+                type="hidden"
+                name="email"
+                value="sac@metalabfarma.com.br"
+              />
 
               <div class="user-box">
                 <input type="text" name="nome" required="" />
@@ -585,6 +592,7 @@
                 <button type="submit" class="button" value="Enviar Mensagem">
                   Enviar
                 </button>
+                <div id="txtSend">Mensagem Enviada !</div>
               </div>
             </form>
           </div>
@@ -604,10 +612,16 @@
         </header>
         <div class="login-box">
           <form
+            class="distribuidor"
+            onsubmit="submitFormMensage()"
             action="https://formmail.kinghost.net/formmail.cgi"
             method="POST"
           >
-            <input type="hidden" name="recipient" value="alvinweeb@gmail.com" />
+            <input
+              type="hidden"
+              name="recipient"
+              value="sac@metalabfarma.com.br"
+            />
             <input
               type="hidden"
               name="redirect"
@@ -618,7 +632,7 @@
               name="subject"
               value="Formulário Site Metalab"
             />
-            <input type="hidden" name="email" value="alvinweeb@gmail.com" />
+            <input type="hidden" name="email" value="sac@metalabfarma.com.br" />
 
             <div class="user-box">
               <input type="text" name="nome" required="" />
@@ -659,6 +673,7 @@
               <button type="submit" class="button" value="Enviar Mensagem">
                 Enviar
               </button>
+              <div id="txtSend">Mensagem Enviada !</div>
             </div>
           </form>
         </div>
